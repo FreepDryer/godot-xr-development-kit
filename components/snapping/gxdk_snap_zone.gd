@@ -73,6 +73,8 @@ signal released(body)
 
 ## We only snap objects belonging to these physics layers
 @export_flags_3d_physics var detection_mask: int = 1
+
+@export var parent_override : Node3D
 #endregion
 
 
@@ -164,6 +166,9 @@ func capture_node(body: PhysicsBody3D, offset: Transform3D = Transform3D()):
 	_captured_lookup[_captured_body] = self
 
 	var parent: Node = get_parent()
+	# Override the parent... cause its funny
+	if parent_override:
+		parent = parent_override
 
 	if parent is PhysicsBody3D:
 		_joint = Generic6DOFJoint3D.new()

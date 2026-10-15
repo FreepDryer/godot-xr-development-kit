@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xrt2w5258rw"
 path.s3tc="res://.godot/imported/teleport_target.png-80a5eba7b510bd1930283babf4137db5.s3tc.ctex"
-path.etc2="res://.godot/imported/teleport_target.png-80a5eba7b510bd1930283babf4137db5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/godot-xr-development-kit/images/teleport_target.png"
-dest_files=["res://.godot/imported/teleport_target.png-80a5eba7b510bd1930283babf4137db5.s3tc.ctex", "res://.godot/imported/teleport_target.png-80a5eba7b510bd1930283babf4137db5.etc2.ctex"]
+dest_files=["res://.godot/imported/teleport_target.png-80a5eba7b510bd1930283babf4137db5.s3tc.ctex"]
 
 [params]
 

@@ -40,7 +40,7 @@ extends Resource
 @export_range(-20.0, 20.0, 1.0, "radians_as_degrees") var thumb_spread: float = 0.0
 
 ## Metacarpal curl for our thumb
-@export_range(-10.0, 90.0, 1.0, "radians_as_degrees") var thumb_metacarpal_curl: float = 0.0
+@export_range(-30.0, 90.0, 1.0, "radians_as_degrees") var thumb_metacarpal_curl: float = 0.0
 
 ## Proximal curl for our thumb
 @export_range(0.0, 90.0, 1.0, "radians_as_degrees") var thumb_proximal_curl: float = 0.0
@@ -60,7 +60,7 @@ extends Resource
 @export_range(-20.0, 20.0, 1.0, "radians_as_degrees") var index_spread: float = 0.0
 
 ## Proximal curl for our index finger
-@export_range(-10.0, 90.0, 1.0, "radians_as_degrees") var index_proximal_curl: float = deg_to_rad(25.0)
+@export_range(-30.0, 90.0, 1.0, "radians_as_degrees") var index_proximal_curl: float = deg_to_rad(25.0)
 
 ## Intermediate curl for our index finger
 @export_range(0.0, 90.0, 1.0, "radians_as_degrees") var index_intermediate_curl: float = deg_to_rad(45.0)
@@ -80,7 +80,7 @@ extends Resource
 @export_range(-20.0, 20.0, 1.0, "radians_as_degrees") var middle_spread: float = 0.0
 
 ## Proximal curl for our middle finger
-@export_range(-10.0, 90.0, 1.0, "radians_as_degrees") var middle_proximal_curl: float = deg_to_rad(25.0)
+@export_range(-30.0, 90.0, 1.0, "radians_as_degrees") var middle_proximal_curl: float = deg_to_rad(25.0)
 
 ## Intermediate curl for our middle finger
 @export_range(0.0, 90.0, 1.0, "radians_as_degrees") var middle_intermediate_curl: float = deg_to_rad(45.0)
@@ -100,7 +100,7 @@ extends Resource
 @export_range(-20.0, 20.0, 1.0, "radians_as_degrees") var ring_spread: float = 0.0
 
 ## Proximal curl for our ring finger
-@export_range(-10.0, 90.0, 1.0, "radians_as_degrees") var ring_proximal_curl: float = deg_to_rad(25.0)
+@export_range(-30.0, 90.0, 1.0, "radians_as_degrees") var ring_proximal_curl: float = deg_to_rad(25.0)
 
 ## Intermediate curl for our ring finger
 @export_range(0.0, 90.0, 1.0, "radians_as_degrees") var ring_intermediate_curl: float = deg_to_rad(45.0)
@@ -120,7 +120,7 @@ extends Resource
 @export_range(-20.0, 20.0, 1.0, "radians_as_degrees") var little_spread: float = 0.0
 
 ## Proximal curl for our little finger
-@export_range(-10.0, 90.0, 1.0, "radians_as_degrees") var little_proximal_curl: float = deg_to_rad(25.0)
+@export_range(-30.0, 90.0, 1.0, "radians_as_degrees") var little_proximal_curl: float = deg_to_rad(25.0)
 
 ## Intermediate curl for our little finger
 @export_range(0.0, 90.0, 1.0, "radians_as_degrees") var little_intermediate_curl: float = deg_to_rad(45.0)

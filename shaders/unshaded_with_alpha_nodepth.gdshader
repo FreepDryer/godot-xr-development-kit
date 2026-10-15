@@ -4,8 +4,9 @@ shader_type spatial;
 render_mode unshaded, cull_front, depth_test_disabled;
 
 uniform vec4 albedo : source_color = vec4(1.0);
+uniform float alpha = 1.0;
 
 void fragment() {
 	ALBEDO = albedo.rgb;
-	ALPHA = albedo.a;
+	ALPHA = alpha;
 }
