@@ -59,6 +59,7 @@ signal xr_pose_recenter
 
 ## Physics rate multiplier compared to HMD frame rate
 @export var physics_rate_multiplier : int = 1
+@export var physics_tick_rate : int = 240
 
 ## If non-zero, specifies the target refresh rate
 @export var target_refresh_rate : float = 0
@@ -245,8 +246,8 @@ func _on_openxr_session_begun() -> void:
 	# Pick a physics rate
 	var active_rate := _current_refresh_rate if _current_refresh_rate > 0 else 144.0
 	var physics_rate := int(round(active_rate * physics_rate_multiplier))
-	print("Setting physics rate to ", physics_rate)
-	Engine.physics_ticks_per_second = physics_rate
+	#print("Setting physics rate to ", physics_rate)
+	Engine.physics_ticks_per_second = physics_tick_rate
 
 
 # Handle OpenXR visible state
